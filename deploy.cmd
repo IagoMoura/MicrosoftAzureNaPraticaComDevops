@@ -68,8 +68,8 @@ IF NOT DEFINED MSBUILD_PATH (
 echo Handling .NET Web Application deployment.
 
 :: 1. Restore NuGet packages
-IF /I "DevOps.sln" NEQ "" (
-  call :ExecuteCmd nuget restore "%DEPLOYMENT_SOURCE%\DevOps.sln"
+IF /I "MicrosoftAzureNaPraticaComDevops.sln" NEQ "" (
+  call :ExecuteCmd nuget restore "%DEPLOYMENT_SOURCE%\MicrosoftAzureNaPraticaComDevops.sln"
 
    IF !ERRORLEVEL! NEQ 0 goto error
  )
