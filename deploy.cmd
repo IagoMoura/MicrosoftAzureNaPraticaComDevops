@@ -85,14 +85,14 @@ IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 3. Building test project
 echo Building test project
-"%MSBUILD_PATH%" "%DEPLOYMENT_SOURCE%\MicrosoftAzureNaPraticaComDevops.Tests\MicrosoftAzureNaPraticaComDevops.Tests.csproj"
+"%MSBUILD_PATH%" "%DEPLOYMENT_SOURCE%\MicrosoftAzureNaPraticaComDevops\MicrosoftAzureNaPraticaComDevops.Tests\MicrosoftAzureNaPraticaComDevops.Tests.csproj"
 IF !ERRORLEVEL! NEQ 0 goto error
 
 
 
 :: 4. Running tests
 echo Running tests
-vstest.console.exe "%DEPLOYMENT_SOURCE%\MicrosoftAzureNaPraticaComDevops.Tests\bin\Debug\MicrosoftAzureNaPraticaComDevops.Tests.dll"
+vstest.console.exe "%DEPLOYMENT_SOURCE%\MicrosoftAzureNaPraticaComDevops\MicrosoftAzureNaPraticaComDevops.Tests\bin\Debug\MicrosoftAzureNaPraticaComDevops.Tests.dll"
 
 IF !ERRORLEVEL! NEQ 0 goto error
 
