@@ -50,5 +50,11 @@ namespace MicrosoftAzureNaPraticaComDevops.Tests.Controllers
             // Assert
             Assert.IsNotNull(result);
         }
+
+        [TestMethod]
+        public void Teste()
+        {
+            Assert.IsTrue(1 == 2);
+        }
     }
 }
