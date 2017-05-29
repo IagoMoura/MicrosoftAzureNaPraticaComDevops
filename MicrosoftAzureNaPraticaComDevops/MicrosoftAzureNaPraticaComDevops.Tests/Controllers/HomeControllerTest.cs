@@ -54,7 +54,7 @@ namespace MicrosoftAzureNaPraticaComDevops.Tests.Controllers
         [TestMethod]
         public void Teste()
         {
-            Assert.IsTrue(1 == 1, "1 é diferente de 2");
+            Assert.IsTrue(1 == 2, "1 é diferente de 2");
         }
     }
 }
